@@ -1,0 +1,71 @@
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 14px 14px;
+    background: linear-gradient(360deg, #33dbbf , #33cbcf , #33bbdf);
+    border-radius: 4px;
+    animation: animate 10s linear infinite
+}
+@keyframes animate{
+    50%{
+        filter: hue-rotate(360deg); 
+    }
+}
+
+/* @font-face {
+    font-family: "visitor1";
+    src: url(visitor1.ttf);
+} */
+
+#digits {
+  display: flex;
+  color: rgb(238, 238, 255);
+  background-color: #000000;
+  padding: 15px 15px 15px 30px;
+  font-size: 35px;
+
+  letter-spacing: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  border-radius: 9px;
+}
+#weekdays{
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    padding-left: 13px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+#ampm{
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    padding-top: 10px;
+    font-size:12px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.timeextras{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
